@@ -3,12 +3,12 @@ Rails.application.routes.draw do
         sessions: 'users/sessions'
       }
   get 'articles/new'
-  get 'welcome/index'
+  get 'articles/index'
   
   resources :articles do
     resources :comments
   end
   
-  root 'welcome#index'
+  root 'articles#index'
   
 end

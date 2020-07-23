@@ -17,6 +17,7 @@ class MyValidator < ActiveModel::Validator
 end
 
 class Article < ApplicationRecord
+  belongs_to :user
 	has_many :comments, dependent: :destroy
   include ActiveModel::Validations
   validates_with MyValidator
