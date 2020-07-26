@@ -1,17 +1,18 @@
+<div class="container">
+<%= render 'pagelayout' %>
+<h1>
 <p>
-  <strong>Title:</strong>
-  <%= @article.title %>
-</p>
+ <strong><%= @article.title %></strong>
+</p></h1>
  
 <p>
-  <strong>Text:</strong>
+  <strong>Title</strong>
   <%= @article.text %>
 </p>
 
-<h2>Comments</h2>
 <%= render @article.comments%>
   
-<h2>Add a comment:</h2>
+<h5><strong>Add a comment:<strong></h5>
 <%= render 'comments/form' %>
 
-<%= link_to 'Back', articles_path %>
+<a class="btn btn-info"<%= link_to 'Back', articles_path %></a>

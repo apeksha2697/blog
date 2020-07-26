@@ -1,3 +1,4 @@
+<div class="container">
 <h1>Edit Comment</h1>
 <%= form_for ([@article, @comment]) do |form| %>
 
@@ -28,4 +29,4 @@
   </p>
 <% end %>
 
-<%= link_to 'Back', [@article] %>
+<a class="btn btn-info"<%= link_to 'Back', [@article] %></a>

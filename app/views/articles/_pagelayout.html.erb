@@ -1,0 +1,13 @@
+<div class="container">
+<nav class="navbar navbar-light bg-light navbar-default navbar-fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="/"></a>
+    <form class="form-inline">
+      <div style="padding-left: 10px;">
+        <a class="btn btn-outline-success" <%= link_to 'Sign out', destroy_user_session_path,
+        method: :delete %>
+        </a>
+      </div>
+    </form>
+  </div>
+</nav>

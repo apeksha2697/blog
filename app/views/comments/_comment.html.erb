@@ -9,11 +9,9 @@
 </p>
 
 <p>
-  <%= link_to 'Edit Comment', [:edit, comment.article, comment]  %> 
-</p> 
+<a class="btn btn-info btn-sm" <%= link_to 'Edit Comment', [:edit, comment.article, comment]  %></a> 
 
-<p>
-  <%= link_to 'Destroy Comment', [comment.article, comment],
+<a class="btn  btn-info btn-sm" <%= link_to 'Destroy Comment', [comment.article, comment],
     method: :delete,
-    data: { confirm: 'Are you sure?' } %>
+    data: { confirm: 'Are you sure?' } %></a>
 </p>   
