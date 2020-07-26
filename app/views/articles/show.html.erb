@@ -6,12 +6,13 @@
 </p></h1>
  
 <p>
-  <strong>Title</strong>
   <%= @article.text %>
 </p>
 
+<p>
 <%= render @article.comments%>
-  
+</p> 
+
 <h5><strong>Add a comment:<strong></h5>
 <%= render 'comments/form' %>
 
