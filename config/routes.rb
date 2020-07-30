@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users, controllers: {
-        sessions: 'users/sessions'
-      }
+    sessions: 'users/sessions'
+    }
   get 'articles/new'
   get 'articles/index'
   
