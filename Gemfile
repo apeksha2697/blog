@@ -8,6 +8,7 @@ gem 'devise'
 #bootstrap
 gem 'bootstrap', '~> 4.5.0'
 gem 'simple_form'
+gem 'omniauth-google-oauth2'
 #jQuery
 gem 'jquery-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

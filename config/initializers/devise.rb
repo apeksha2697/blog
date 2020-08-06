@@ -11,6 +11,7 @@
 Devise.setup do |config|
   config.http_authenticatable_on_xhr = false
   config.navigational_formats = [:"*/*", "*/*", :html, :js]
+  config.omniauth :google_oauth2, '1820027883-4pva0do09h0r9tb9q76appvulgmeulf4.apps.googleusercontent.com', '-9tpqth6-wevl22DA7d6a68W', {}
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
